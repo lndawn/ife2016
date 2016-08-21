@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>行星与飞船</title>
+  <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+  <div id="control">
+    <div id="control-title">操作面板</div>
+    <div id="control-main">
+      <div data-id="0">
+        <span>第1轨道</span>
+        <button data-type="create" data-status="create">创建飞船</button>
+        <button disabled="disabled" data-type="drive" data-status="start">飞行</button>
+        <input type="number" title="速度" value="1" disabled="disabled">
+        <button disabled="disabled" data-type="rate">设置速度</button>
+      </div>
+      <div data-id="1">
+        <span>第2轨道</span>
+        <button data-type="create" data-status="create">创建飞船</button>
+        <button disabled="disabled" data-type="drive" data-status="start">飞行</button>
+        <input type="number" title="速度" value="1" disabled="disabled">
+        <button disabled="disabled" data-type="rate">设置速度</button>
+      </div>
+      <div data-id="2">
+        <span>第3轨道</span>
+        <button data-type="create" data-status="create">创建飞船</button>
+        <button disabled="disabled" data-type="drive" data-status="start">飞行</button>
+        <input type="number" title="速度" value="1" disabled="disabled">
+        <button disabled="disabled" data-type="rate">设置速度</button>
+      </div>
+      <div data-id="3">
+        <span>第4轨道</span>
+        <button data-type="create" data-status="create">创建飞船</button>
+        <button disabled="disabled" data-type="drive" data-status="start">飞行</button>
+        <input type="number" title="速度" value="1" disabled="disabled">
+        <button disabled="disabled" data-type="rate">设置速度</button>
+      </div>
+    </div>
+  </div>
+  <div id="console">
+    <div id="console-title">控制台</div>
+    <div id="console-text"></div>
+  </div>
+  <div id="space">
+    <div id="planet"></div>
+    <div id="orbit0" class="orbit"></div>
+    <div id="orbit1" class="orbit"></div>
+    <div id="orbit2" class="orbit"></div>
+    <div id="orbit3" class="orbit"></div>
+  </div>
+  <script src="main.js"></script>
+  <script src="commander.js"></script>
+  <script src="spaceManager.js"></script>
+  <script src="spaceship.js"></script>
+</body>
+</html>

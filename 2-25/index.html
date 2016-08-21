@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tree component</title>
+  <style type="text/css">
+    *{
+      box-sizing: border-box;
+      cursor:pointer;
+    }
+    ul{
+      padding-left: 20px;
+      padding-bottom:0; 
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    }
+  </style>
+</head>
+<body>
+  <fieldset class="container">
+    <legend>树形组件</legend>
+    <div class="search">
+      <input type="text" id="search-input">
+      <button id="search-btn">搜索</button>
+      <button id="clear">清除</button>
+      <p class="result"></p>
+    </div>
+    <ul id="tree">
+      <li id="root" class="node">
+        <p>百度</p>
+        <ul>
+          <li id="left1" class=node>
+            <p>移动服务事业群</p>
+            <ul>
+              <li id="left21" class="node"><p>贴吧</p>
+                <ul>
+                  <li class="left31 node">
+                    <p>贴吧API</p>
+                  </li>
+                </ul>
+              </li>
+              <li id="left22" class="node">
+                <p>移动云</p>
+                <ul>
+                  <li class="left32 node"><p>移动云API</p></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li id="right1" class="node">
+            <p>搜索业务群</p>
+            <ul>
+              <li id="right21" class="node">
+                <p>百度糯米</p>
+                <ul>
+                  <li id="right31" class="node">
+                    <p>糯米平台</p>
+                  </li>
+                  <li id="right32" class="node">
+                    <p>移动接口</p>
+                  </li>
+                  <li id="right31" class="node">
+                    <p>推广宣传</p>
+                  </li>
+                </ul>
+              </li>
+              <li id="right22" class="node">
+                <p>搜索事业群</p>
+                <ul>
+                  <li id="right34" class="node">
+                    <p>算法支持</p>
+                  </li>
+                  <li id="right35" class="node">
+                    <p>数据统计</p>
+                  </li>
+                  <li id="right36" class="node">
+                    <p>设备管理</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </fieldset>
+  <script src="task.js"></script>
+</body>
+</html>

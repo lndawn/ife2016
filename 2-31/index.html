@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="UTF-8">
+  <title>表单验证</title>
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <style> 
+      body{
+        font-size:25px;
+      }
+      fieldset{
+        border:none;
+      }
+      form{
+        width:700px;
+        margin:auto;
+        padding:100px;
+      }
+      #graduate{
+        margin-left:110px;
+      }
+      input[type="radio"]{
+        margin-right:5px;
+      }
+      #college{
+        margin-top:20px;
+      }
+      #college label{
+        width:100px;
+        text-align:right;
+        margin-right:30px;
+      }
+      #college select{
+        width:140px;
+        outline:none;
+        padding:5px;
+        border:1px solid #CDCDCD;
+        border-radius:4px;
+      }
+      #company{
+        margin-top:20px;
+        display: none;
+      }
+      #company input{
+        width:350px;
+        padding:5px;
+        outline:none;
+        border:1px solid #CDCDCD;
+        border-radius:4px;
+      }
+  </style>
+</head>
+<body>
+    <form>
+      <fieldset id="student">
+        <label for="undergraduate">
+        <input type="radio" id="undergraduate" value="在校生" checked>在校生
+        </label>
+        <label for="graduate">
+          <input type="radio" id="graduate" value="非在校生">非在校生
+        </label>
+      </fieldset>
+      <fieldset id="college">
+        <label for="city">所在城市
+          <select name="city" id="city"></select>
+        </label>
+        <label for="school">所在学校
+          <select name="school" id="school"></select>
+        </label>
+      </fieldset>
+      <fieldset id="company">
+        <label for="job">就业单位：
+          <input type="text" id="job" placeholder="请填写公司名称" name="job">
+        </label>
+      </fieldset>
+    </form>
+    <script src="task.js"></script>
+</body>
+</html>

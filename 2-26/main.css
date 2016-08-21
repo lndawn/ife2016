@@ -1,0 +1,128 @@
+#{
+	user-select:none;
+}
+html,body{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	background: #000;
+}
+#planet{
+	position:fixed;
+	background: blue;
+	left:50%;
+	top:50%;
+	margin:-50px 0 0 -50px;
+	width:100px;
+	height:100px;
+	border-radius: 100%;
+}
+#orbit0{
+	margin:-102px 0 0 -102px;
+	width:200px;
+	height:200px;
+}
+#orbit1{
+	margin:-152px 0 0 -152px;
+	width:300px;
+	height:300px;
+}
+#orbit2{
+	margin:-202px 0 0 -202px;
+	width:400px;
+	height:400px;
+}
+#orbit3{
+	margin:-252px 0 0 -252px;
+	width:500px;
+	height:500px;
+}
+.orbit{
+	position: fixed;
+	top:50%;
+	left:50%;
+	border-radius: 100%;
+	border:2px #555 solid;
+}
+.orbit-ship0{
+	margin:-110px 0 0 -40px;
+	transform-origin: center 110px;
+}
+.orbit-ship1{
+	margin:-160px 0 0 -40px;
+	transform-origin: center 160px;
+}
+.orbit-ship2{
+	margin:-210px 0 0 -40px;
+	transform-origin:center 210px;
+}
+.orbit-ship3{
+	margin:-260px 0 0 -40px;
+	transform-origin: center 260px;
+}
+.space-ship{
+	width:80px;
+	height:25px;
+	background:#ddd;
+	line-height:25px;
+	text-align:center;
+	position:fixed;
+	left:50%;
+	top:50%;
+	transform:rotate(0deg);
+}
+.energy{
+	width:100%;
+	height:100%;
+	background-color:green;
+}
+.text{
+	position: relative;
+	left:0;
+	top:-25px;
+}
+#console{
+	background: rgba(150,150,150,0.3);
+	width:500px;
+	height:200px;
+	position: fixed;
+	left:50%;
+	z-index:100;
+}
+#console-title,
+#control-title{
+	color:white;
+	background: blue;
+	padding:5px;
+	height:20px;
+	cursor:move;
+}
+#console-text{
+	overflow: auto;
+	color:white;
+	padding:5px;
+	width:490px;
+	height:160px;
+}
+#console-text p{
+	padding:0;
+	margin:0 0 0 20px;
+	text-indent:-20px;
+	user-select:text;
+}
+#console-text span{
+	user-select:text;
+}
+#control{
+	background: rgba(150,150,150,0.3);
+	width:500px;
+	position:fixed;
+	z-index:101;
+}
+#control-main{
+	overflow: auto;
+	color:white;
+	padding:5px;
+	width:490px;
+}

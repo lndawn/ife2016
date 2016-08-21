@@ -1,0 +1,24 @@
+.data-list{
+	width:400px;
+}
+.data-list .date-head{
+	height: 30px;
+  	border-top: 1px solid #2189bf;
+  	border-bottom: 1px solid #aaa;
+}
+.data-list .date-head >li,
+.data-list .date-body >li{
+	float: left;
+	width: 14.28%;
+	line-height: 30px;
+	text-align: center;
+}
+.data-list .date-body{
+	padding-top: 8px;
+}
+.data-list .date-body li{
+	height: 40px;
+    line-height: 18px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}

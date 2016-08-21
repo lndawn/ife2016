@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>document</title>
+  <style type="text/css">
+    button{
+      display:block;
+    }
+    #tag,#hobby{
+      display:flex;
+    }
+    #hobby div,
+    #tag div{
+      height:30px;
+      line-height: 30px;
+      text-align:center;
+      background: red;
+      color:#fff;
+      padding:0 10px;
+      margin:10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <label>Tag:</label>
+    <input type="text" id="tagInput">
+    <div id="tag"></div>
+    <textarea id="hobbyInput" cols="20" rows="5"></textarea>
+    <button id="confirm">确认兴趣爱好</button>
+    <div id="hobby"></div>
+  </div>
+  <script src="task.js"></script>
+</body>
+</html>

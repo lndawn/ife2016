@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flexbox</title>
+  <style type="text/css">
+    *{
+      padding:20px;
+      margin:0;
+    }
+    .flex,
+    .flex>div{
+      box-sizing: border-box;
+    }
+    .flex{
+      display: flex;
+      border: 1px solid gray;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .flex>div{
+      width: 150px;
+      border: 1px solid #f00;
+      padding:0;
+      margin-bottom: 10px;
+    }
+    .flexitem1{
+      height:120px;
+    }
+    .flexitem2{
+      height:100px;
+    }
+    .flexitem3{
+      height:40px;
+    }
+    .flexitem4{
+      height:200px;
+      border:1px solid blue!important;
+    }
+    @media all and (max-width:640px){
+      .flexitem4{
+        order:-1;
+      }
+      .flex{
+        flex-wrap:wrap;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex">
+    <div class="flexitem1">1</div>
+    <div class="flexitem2">2</div>
+    <div class="flexitem3">3</div>
+    <div class="flexitem4">4</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>表单验证</title>
+  <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+<form>
+  <section> 
+    <label>名称</label>
+    <input type=" text" id="name">
+    <br>
+    <span>  必填,长度为4-16个字符</span>
+  </section>
+  <section> 
+      <label>密码</label>
+      <input type="password" id="password">
+      <br>  
+      <span>  6到16位数字和字母</span>
+  </section>
+  <section> 
+      <label>确认密码</label>
+      <input type="password" id="confirm">
+      <br>  
+      <span>  重复输入密码</span>
+  </section>
+  <section> 
+      <label>邮箱</label>
+      <input type="text" id="email">
+      <br>  
+      <span>  example@haha.com</span>
+  </section>
+  <section> 
+      <label>手机</label>
+      <input type="text" id="tele">
+      <br>  
+      <span> 请输入11位手机号码 </span>
+  </section>
+  <section> 
+      <input type="button" id="check" value="验证">
+  </section>
+</form>
+<script src="task.js"> </script>
+</body>
+</html>

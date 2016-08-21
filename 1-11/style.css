@@ -1,0 +1,225 @@
+body{font-family: "微软雅黑";}
+*{box-sizing: border-box;-webkit-box-sizing: border-box;}
+a{-webkit-tap-highlight-color:transparent;}
+a:active,a:visited,a:hover{color: #333333;}
+.clearfix:before,.clearfix:after{
+	content:'';
+	clear:both;
+	display: block;
+}
+.ui-header{
+	top:0;
+	left:0;
+	height:1.825rem;
+	line-height:1.825rem;
+	background: #91d4da;
+	color:#fff;
+	position:fixed;
+	width:100%;
+	font-size:0.75rem;
+}
+.ui-header a{
+	position:absolute;
+	left:0;
+	padding-left: 1.125rem;
+	line-height: 1.825rem;
+	color:#fff;
+	background: url(img/back.png) no-repeat 0.5rem 0.55rem/0.45rem 0.77rem;
+}
+.ui-header h1{
+	text-align:center;
+	margin:0;
+}
+.ui-navbar{
+	position:fixed;
+	width:100%;
+	top:1.825rem;
+	height:1.85rem;
+	display:flex;
+	justify-content: space-between;
+	background:#fff;
+}
+.ui-navbar a{
+	flex:auto;
+	text-align:center;
+	line-height:1.85rem;
+	font-size:0.6rem;
+	border-bottom:3px solid transparent;
+	color:#666;
+}
+.ui-navbar a.active{
+	border-bottom-color:#91d6d9;
+}
+.ui-container{
+	width:100%;
+	padding-top: 3.65rem;
+	overflow-y:auto;
+	background: #f5f5f5;
+}
+.banner{
+	width:100%;
+}
+.banner .imgbox{
+	width:100%;
+	min-height:8.75rem;
+	overflow: hidden;
+}
+.imgbox img{
+	width:100%;
+}
+.wrapper{
+	padding:0.5rem 0.675rem;
+}
+.section1{
+	height:4.75rem;
+	background: #fff;
+	box-sizing: border-box;
+}
+.section1 .label{
+	width:100%;
+	height:3.45rem;
+	border-bottom:2px solid #dfdfdf;
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content: space-around;
+}
+.section1 .label li{
+	width:1.9rem;
+}
+.section1 .label li span{
+	display: block;
+	height:1.925rem;
+	margin-bottom:0.45rem;
+	background: url(img/icon-2.png) no-repeat 0 0rem/100% 100%;
+}
+.section1 .label li a{
+	display: block;
+	line-height: 1rem;
+	font-size:0.55rem;
+	text-align:center;
+}
+.section2{
+	height:6.75rem;
+	background: #fff;
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content: space-around;
+}
+.section2 .item{
+	flex:auto;
+	height:5.5rem;
+}
+.section2 .item .imgbox{
+	width: 100%;
+	height:3.35rem;
+	overflow: hidden;
+}
+.imgbox img{
+	width:100%;
+	border:none;
+}
+.section2 .item  h2{
+	line-height: 1rem;
+	font-size:0.75rem;
+	text-align:center;
+}
+.section2 .item  h3{
+	line-height: 1.1rem;
+	font-size:0.55rem;
+	text-align: center;
+}
+.section3{
+	padding:0 0.675rem;
+	background: #fff;
+	margin-top: 0.55rem;
+}
+.section3 h2{
+	line-height: 1.9rem;
+	font-size:0.75rem;
+	border-bottom: 0.05rem solid #e6e6e6;
+}
+.section3 .item{
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content: space-between;
+	padding-top: 0.55rem;
+}
+.section3 .item:last-of-type{
+	padding-bottom: 0.55rem;
+}
+.section3 .imgbox{
+	width: 26.2%;
+	height:3.65rem;
+	overflow: hidden;
+	border:0.05rem solid #ffc256;
+}
+.section3 .imgbox img{
+	width: 100%;
+	border:none;
+}
+.section3 .item .title{
+	width:70.8%;
+	display: flex;
+	flex-flow:row wrap;
+	justify-content: space-between;
+	align-content:space-between;
+}
+.section3 .item .title h3{
+	flex:0 1 48%;
+	text-align:center;
+	font-size:0.55rem;
+	line-height:1.6rem;
+	background: #f8f8f8;
+}
+.section4{
+	background: #fff;
+	margin:0.55rem 0 2rem;
+}
+.section4 .one li{
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content: space-between;
+	padding:0.45rem 0.35rem;
+	border-bottom: 0.05rem solid #f3f3f3;
+}
+.section4 .one li .imgbox{
+	flex:0 1 30%;
+	overflow:hidden;
+}
+.section4 .one li .con{
+	flex:0 1 67%;
+	position: relative;
+}
+.section4 .one li .con h3{
+	line-height: 0.9rem;
+	font-size:0.675rem;
+}
+.section4 .one li .con p{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	line-height: 0.7rem;
+	font-size:0.55rem;
+	color:#c3c3c3;
+}
+.section4 .more{
+	padding:0 0.35rem;
+}
+.section4 .more h3{
+	line-height: 1.625rem;
+	font-size:0.675rem;
+}
+.section4 .more .titleimg{
+	display: flex;
+	justify-content: space-between;
+	flex-flow:row nowrap;
+}
+.section4 .more .titleimg .imgbox{
+	flex:0 0 32.7%;
+	overflow: hidden;
+}
+.section4 .more p{
+	line-height: 1.3rem;
+	font-size:0.55rem;
+	color:#c3c3c3;
+}

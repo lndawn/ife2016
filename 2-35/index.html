@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>听指令的小方块</title>
+  <style>
+    .container{
+      position: relative;
+    }
+    .background tbody{
+      position: absolute;
+      top:0;
+      left:0;
+    }
+    .background td{
+      height:50px;
+      width: 50px;
+      text-align:center;
+      border-right:1px solid #aaa;
+      border-bottom:1px solid #aaa;
+      font-size:30px;
+    }
+    .background td:first-child{
+      border-right:2px solid #333;
+      border-bottom:0;
+    }
+    .background td:last-child{
+      border-right:2px solid #333;
+    }
+    .background tr:first-child td{
+      border-right:0;
+      border-bottom: 2px solid #333;
+    }
+    .background tr:last-child td{
+      border-bottom:2px solid #333;
+    }
+    .background tr:first-child td:first-child{
+      border-bottom: 0;
+    }
+    .background tr:last-child td:first-child{
+      border-bottom:0;
+    }
+    .square{
+      position:absolute;
+      top:0px;
+      left:0px;
+      width:50px;
+      height:50px;
+      background: #f00;
+      transition: 0.3s;
+    }
+    .square-face{
+      position:absolute;
+      top:0;
+      left:0;
+      width:50px;
+      height:10px;
+      background: #00f;
+    }
+    .control{
+      margin-top:15px;
+      position: absolute;
+      margin-left:50px;
+      top:0;
+      left:600px;
+    }
+    .control .command-group{
+      width:300px;
+      height:120px;
+      position: relative;
+    }
+    .command-group .command-rows{
+      width:20px;
+      top:0;
+      height:119px;
+      overflow:hidden;
+      position: absolute;
+      background: #999;
+      text-align: center;
+      color:#fff;
+      z-index:2;
+    }
+    .control textarea{
+      position: absolute;
+      width:300px;
+      resize:none;
+      box-sizing: border-box;
+      background: #000;
+      font-size:19px;
+      min-height: 120px;
+      padding-left:20px;
+      overflow: auto;
+      color:#296E2F;
+    }
+  </style>
+  <link rel="stylesheet" href="base.css">
+</head>
+<body>
+  <div class="container">
+    <table>
+      <tbody id="background" class="background"></tbody>
+    </table>
+    <div id="square" class="square">
+      <div class="square-face"></div>
+    </div>
+    <div id="control" class="control">
+      <pre class="tip">
+  GO n：向当前方向前进n格
+  TUN LEF n：向左旋转n次
+  TUN RIG n：向右旋转n次 
+  TUN BAC n：向后旋转n次 
+  TRA LEF n：向屏幕的左侧移动n格，方向不变
+  TRA TOP n：向屏幕的上面移动n格，方向不变
+  TRA RIG n：向屏幕的右侧移动n格，方向不变
+  TRA BOT n：向屏幕的下面移动n格，方向不变
+  MOV LEF n：方向转向屏幕左侧，并向屏幕的左侧移动n格
+  MOV TOP n：方向转向屏幕上面，向屏幕的上面移动n格
+  MOV RIG n：方向转向屏幕右侧，向屏幕的右侧移动n格
+  MOV BOT n：方向转向屏幕下面，向屏幕的下面移动n格
+  (PS: n取值为0~10 省略时默认为1格 / 指令错误中止执行)
+      </pre>
+      <button id="run">执行</button>
+      <button id="refresh">refresh</button>
+      <div class="command-group">
+        <ol class="command-rows" id="command-rows"></ol>
+        <textarea id="command" type="text"></textarea>
+      </div>
+    </div>
+  </div>
+  <script src="task.js"></script>
+</body>
+</html>

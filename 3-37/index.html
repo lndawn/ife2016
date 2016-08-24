@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UI组件浮出层</title>
+  <style>
+    body{
+      overflow:auto;
+    }
+    button{
+      border-radius: 5px;
+      font-size:28px;
+      border:none;
+      color:#fff;
+    }
+    .modal{
+      width:400px;
+      height:200px;
+      border:2px solid red;
+      border-radius: 20px;
+      position:fixed;
+      left:50%;
+      top:50%;
+      display: none;
+      text-align:center;
+      margin-left:-200px;
+      margin-top:-100px;
+    }
+    .mask{
+      display: none;
+      position: fixed;
+      height:100%;
+      width:100%;
+      background: #999;
+      opacity: 0.7;
+      top:0;
+      left:0;
+    }
+    .modal h2{
+      cursor:move;
+    }
+    .login{
+      background: #f00;
+    }
+    .sure{
+      background: #0f0;
+    }
+    .cancle{
+      background: #999;
+    }
+
+  </style>
+</head>
+<body>
+  <button id="login" value="登录" class="login">登录</button>
+  <div class="mask" id="mask"></div>
+    <div id="modal" class="modal">
+      <h2>这是一个弹出层</h2>
+      <p>点击按钮或者遮罩关闭,按住标题处可以拖动</p>
+      <button id="sure" class="sure" value="确定">确定</button>
+      <button id="cancle" class="cancle" value="取消">取消</button>
+    </div>
+  <script src="modal.js"></script>
+  <script src="task.js"></script>
+</body>
+</html>

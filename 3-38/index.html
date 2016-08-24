@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>组件化表单</title>
+  <style>
+    .table-tool{
+      border-collapse: collapse;
+      text-align:center;
+      position: absolute;
+      top:400px;
+      left:400px;
+    }
+    .table-tool th{
+      background: #555;
+      color:#fff;
+      position: relative;
+      border:1px solid #555;
+    }
+    .table-tool th>span{
+      display: inline-block;
+      width:9px;
+      height:15px;
+      position: absolute;
+      right:10px;
+      top:5px;
+      cursor:pointer;
+    }
+    .table-tool th>span.sort{
+      background-image: url('arrow.png');
+    }
+    .table-tool th,
+    .table-tool td{
+      width:130px;
+      height:25px;
+      line-height: 25px;
+    }
+  </style>
+</head>
+<body>
+  <div id="table">
+  </div>
+  <script src="task.js"></script>
+</body>
+</html>

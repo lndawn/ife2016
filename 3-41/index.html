@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>日历组件</title>
+  <style>
+    #select{
+      width:200px;
+      height:30px;
+      line-height:30px;
+      text-align:center;
+      border:1px solid gray;
+    }
+    .calendar{
+      height:350px;
+      width:350px;
+      border:2px solid gray;
+      margin-top:0 auto;
+    }
+    .calendar .title{
+      text-align: center;
+      padding:5px;
+      background: #b12313;
+      color:#fff;
+      height:30px;
+      line-height:30px;
+    }
+    .calendar .title #pre{
+      float:left;
+      cursor:pointer;
+    }
+    .calendar .title #next{
+      float:right;
+      cursor:pointer;
+    }
+    span{
+      text-align:center;
+      display: inline-block;
+      width:50px;
+      height:50px;
+      line-height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p type="text" id="select" value=""></p>
+    <div class="calendar" id="calendar">
+    </div>
+  </div>
+  <script src="task.js"></script>
+</body>
+</html>

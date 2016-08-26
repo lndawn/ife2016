@@ -1,0 +1,106 @@
+#content{
+	width:1000px;
+	height:800px;
+	margin:0 auto;
+	position:relative;
+	overflow: hidden;
+}
+#content img{
+	height:100%;
+	width:100%;
+	object-fit: cover;
+	object-position: center;
+}
+.imgBox{
+	position:absolute;
+}
+.img2 .imgBox:nth-child(1){
+  left:0;
+  top:0;
+  width:66.7%;
+  height:100%;
+  clip-path: url('clipPath.svg#clip1');
+  -webkit-clip-path:polygon(0% 0%,100% 0%,50% 100%,0% 100%);
+}
+.img2 .imgBox:nth-child(2){
+  right:0;
+  top:0;
+  width:66.7%;
+  height:100%;
+  clip-path: url('clipPath.svg#clip2');
+  -webkit-clip-path: polygon(50% 0%,100% 0%,100% 100%,0% 100%);
+}
+.img3 .imgBox:nth-child(1){
+	height: 100%;
+	width:600px;
+	left:0;
+}
+.img3 .imgBox:nth-child(2){
+	height: 50%;
+	width:400px;
+	right:0;
+	top:0;
+}
+.img3 .imgBox:nth-child(3){
+	height:50%;
+	width:400px;
+	right:0;
+	bottom:0;
+}
+.img4 .imgBox{
+	height:50%;
+	width:50%;
+	position: relative;
+	float:left;
+}
+.img5 .imgBox:nth-child(1){
+	height:66.7%;
+	width:66.7%;
+	left:0;
+	top:0;
+}
+.img5 .imgBox:nth-child(2){
+	width:33.3%;
+	height:333px;
+	right:0;
+	top:0;
+}
+.img5 .imgBox:nth-child(3){
+	width:33.3%;
+	height:467px;
+	right:0;
+	bottom:0;
+}
+.img5 .imgBox:nth-child(4){
+	width:33.3%;
+	height:33.3%;
+	left:0;
+	bottom:0;
+}
+.img5 .imgBox:nth-child(5){
+	width:33.3%;
+	width:33.3%;
+	left:33.3%;
+	bottom:0;
+}
+.img6 .imgBox{
+	position: relative;
+}
+.img6 .imgBox:nth-child(1){
+	width:66.7%;
+	height:66.7%;
+	float:left;
+}
+.img6 .imgBox:nth-child(2),
+.img6 .imgBox:nth-child(3),
+.img6 .imgBox:nth-child(4){
+	width:33.3%;
+	height:33.3%;
+	float:right;
+}
+.img6 .imgBox:nth-child(5),
+.img6 .imgBox:nth-child(6){
+	width:33.3%;
+	height:33.3%;
+	float:left;
+}
